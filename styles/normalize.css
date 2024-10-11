@@ -27,9 +27,10 @@
   /**
    * Render the `main` element consistently in IE.
    */
+   /*
   header{
     text-align: center;
-  }
+  }*/
   main {
     display: block;
   }
