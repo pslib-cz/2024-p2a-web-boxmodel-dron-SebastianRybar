@@ -67,9 +67,15 @@ color: var(--light, white);
     max-width: 960px;
     margin: 0 auto ;
 }
+
+.page__section{
+    padding: 1em;
+    background-color: rgb(192,192,);
+}
 .picture-box{
     margin: 0;
 }
+
 .picture-box__caption{
 font-size: 0.8em;
 color:var(--gray,gray);
@@ -116,6 +122,27 @@ padding:1em;
     padding:1em;
     max-width: 24em;
     display: inline-block;
+}
+
+.gallery{
+    --indent: 0,5em;
+    margin: calc(-1 * var(--indent));
+}
+.gallery__item{
+    display: block;
+    margin: var(--indent);
+}
+
+@media(min-width: 760px){
+    .gallery__item{
+        display: inline-block;
+        width: calc(50% - 2* var(--indent));
+    }
+.gallery__item--100w{
+    display: inline-block;
+    width: calc(100% - 2* var(--indent));
+}
+    
 }
 
 }
